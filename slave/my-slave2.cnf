@@ -18,3 +18,11 @@ read_only = on
 gtid_mode                = on
 enforce_gtid_consistency = on
 log_slave_updates        = on
+
+general_log=1
+general_log_file=/var/log/mysql/general.log
+
+# Slow query settings:
+slow_query_log=1
+slow_query_log_file=/var/log/mysql/slow.log
+long_query_time=0.5
